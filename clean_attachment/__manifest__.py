@@ -22,6 +22,7 @@
         'views/templates.xml',
         'views/menu.xml'
     ],
+    "images": ['static/description/Banner.gif'],
     'demo': [
         'demo/demo.xml',
     ],
