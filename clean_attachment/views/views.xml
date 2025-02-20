@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="view_clean_attachment_wizard_form" model="ir.ui.view">
+        <field name="name">clean.attachment.wizard.form</field>
+        <field name="model">clean.attachment.wizard</field>
+        <field name="arch" type="xml">
+            <form string="Clean Attachments">
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="model_id" options="{'no_create': True}"/>
+                            <field name="from_date"/>
+                        </group>
+                        <group>
+                            <field name="file_type"/>
+                            <field name="to_date"/>
+                        </group>
+                    </group>
+                    <footer>
+                        <button name="clean_attachments" type="object" string="Clean" class="oe_highlight"/>
+                        <button string="Cancel" class="btn-secondary" special="cancel"/>
+                    </footer>
+                </sheet>
+            </form>
+        </field>
+    </record>
+</odoo>

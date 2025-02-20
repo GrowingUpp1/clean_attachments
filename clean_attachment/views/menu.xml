@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <!-- Define Parent Menu -->
+    <menuitem id="menu_gup_clean_attachment_main" name="Clean Attachment" action="action_open_clean_attachment_wizard"/>
+
+    <!-- Define the action that opens the wizard -->
+    <record id="action_open_clean_attachment_wizard" model="ir.actions.act_window">
+        <field name="name">Clean Attachments Wizard</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">clean.attachment.wizard</field>
+        <field name="view_mode">form</field>
+        <field name="view_id" ref="view_clean_attachment_wizard_form"/>
+        <field name="target">new</field>
+    </record>
+</odoo>
