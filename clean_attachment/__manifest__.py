@@ -22,7 +22,7 @@
         'views/templates.xml',
         'views/menu.xml'
     ],
-    "images": ['static/description/Banner.gif'],
+    "images": ['static/description/Banner.png'],
     'demo': [
         'demo/demo.xml',
     ],
